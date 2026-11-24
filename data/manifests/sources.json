@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/babylonhealth/primock57",
+  "files": [
+    "LICENSE.md",
+    "README.md",
+    "notes/day1_consultation01.json",
+    "transcripts/day1_consultation01_doctor.TextGrid",
+    "transcripts/day1_consultation01_patient.TextGrid",
+    "notes/day1_consultation02.json",
+    "transcripts/day1_consultation02_doctor.TextGrid",
+    "transcripts/day1_consultation02_patient.TextGrid",
+    "notes/day1_consultation03.json",
+    "transcripts/day1_consultation03_doctor.TextGrid",
+    "transcripts/day1_consultation03_patient.TextGrid"
+  ]
+}

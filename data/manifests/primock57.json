@@ -1,0 +1,82 @@
+{
+  "dataset": "PriMock57 subset",
+  "source": "https://github.com/babylonhealth/primock57",
+  "license": "CC-BY-4.0",
+  "download_date": "2026-11-24T09:34:11.971966+00:00",
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/LICENSE.md",
+      "bytes": 17067,
+      "sha256": "c4077139f0479418e8ce544f45f409fd3192a315f23071b4d41083e4a28357a1"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/README.md",
+      "bytes": 2426,
+      "sha256": "531d01051c5efe52aea2cf68432478bc73cf8b4e57041fc2a871fb4551808941"
+    },
+    {
+      "path": "notes/day1_consultation01.json",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/notes/day1_consultation01.json",
+      "bytes": 1001,
+      "sha256": "ebab4d30f5b31f5a68261840c39461a52a8eeeec55fd7312dbb18ff51e223c33"
+    },
+    {
+      "path": "transcripts/day1_consultation01_doctor.TextGrid",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/transcripts/day1_consultation01_doctor.TextGrid",
+      "bytes": 18434,
+      "sha256": "a727b4f53fd0c21750405fa683a0079585d9cf3cf763d3ced51bde9673a3eb04"
+    },
+    {
+      "path": "transcripts/day1_consultation01_patient.TextGrid",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/transcripts/day1_consultation01_patient.TextGrid",
+      "bytes": 17513,
+      "sha256": "7082e1abf185b30a82d57d585b999d4f11263e006359249aeffbad1061bfd0bd"
+    },
+    {
+      "path": "notes/day1_consultation02.json",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/notes/day1_consultation02.json",
+      "bytes": 958,
+      "sha256": "074cb1826b76feeb9f632ef1e4667704ce89d73c01ce1677686b2c81cd61cfc5"
+    },
+    {
+      "path": "transcripts/day1_consultation02_doctor.TextGrid",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/transcripts/day1_consultation02_doctor.TextGrid",
+      "bytes": 17093,
+      "sha256": "4a33e030a4670936754821469855e63cb3263b1575da098cacd1158b48684277"
+    },
+    {
+      "path": "transcripts/day1_consultation02_patient.TextGrid",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/transcripts/day1_consultation02_patient.TextGrid",
+      "bytes": 12903,
+      "sha256": "61ae00734844852f9fd70df574b02aa79b3da4b654464bd0d70191266a5f78fa"
+    },
+    {
+      "path": "notes/day1_consultation03.json",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/notes/day1_consultation03.json",
+      "bytes": 1113,
+      "sha256": "06dcd4e4357cd79472bc59b022406a68975b800cba53274192d0eeefec0493ed"
+    },
+    {
+      "path": "transcripts/day1_consultation03_doctor.TextGrid",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/transcripts/day1_consultation03_doctor.TextGrid",
+      "bytes": 18563,
+      "sha256": "a4a10a7817ea6ff09baa7c5dcf582008d4d67d82154492622e3ba39af7ef8589"
+    },
+    {
+      "path": "transcripts/day1_consultation03_patient.TextGrid",
+      "url": "https://raw.githubusercontent.com/babylonhealth/primock57/cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5/transcripts/day1_consultation03_patient.TextGrid",
+      "bytes": 13893,
+      "sha256": "db2982dfa60856dc104919f3e7a71716bd58c243e81311d41cd6010cb7f39f90"
+    }
+  ],
+  "intended_usage": "mock dialogue structure inspection; no model training",
+  "restrictions": "attribution; retain license; indicate adaptations",
+  "processing_steps": [
+    "UTF-8 decode",
+    "JSON parse or TextGrid parse"
+  ],
+  "revision": "cd2ac707ad03cb4d2531f4ec6b90c659bf4357c5",
+  "number_of_consultations": 3
+}
