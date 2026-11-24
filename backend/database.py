@@ -8,6 +8,7 @@ from pathlib import Path
 from backend.schemas import Analysis, Note
 from backend.pipeline import analyze
 from ai.validation import validate
+from ai.source_spans import attach_segment_times
 
 SCHEMA = '''
 CREATE TABLE IF NOT EXISTS consultations (
@@ -95,6 +96,8 @@ class Store:
 
     def create(self, transcript, title='Fictional consultation', audio=None):
         result = analyze(transcript)
+        if audio:
+            result = attach_segment_times(result, audio['segments'])
         cid = str(uuid.uuid4())
         with self.connect() as db:
             db.execute('INSERT INTO consultations(id,title,synthetic) VALUES(?,?,1)', (cid, title))

@@ -207,3 +207,14 @@ def test_structured_allergy_history_and_vitals():
     assert a.structured['medical_history'][0]['speaker']=='Patient'
     assert a.structured['vital_signs'][0]['speaker']=='Doctor'
     assert a.structured['follow_up']
+
+
+def test_audio_source_times_and_edited_alignment(store):
+    text='I have headache. No fever.'
+    audio={'path':'fictional.wav','segments':[
+        {'start':1.2,'end':2.5,'text':'I have headache.','avg_logprob':-0.2},
+        {'start':3.0,'end':4.0,'text':'No fever.','avg_logprob':-0.2}]}
+    r=store.create(text,audio=audio)
+    assert [f['mention']['timestamp'] for f in r['analysis']['findings']]==[1.2,3.0]
+    r=store.revise(r['id'],1,transcript='Patient: I have headache. No fever.')
+    assert all(f['mention']['timestamp'] is None for f in r['analysis']['findings'])

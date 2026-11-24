@@ -49,3 +49,5 @@ Executable schema: `backend/database.py:SCHEMA`. `dataset_records` is a standalo
 ## Known NLP boundaries
 
 English dictionary/rule baseline; sentence and clause scope are approximate. Family members are recognized only by listed relationship terms; doctor questions are excluded. No coreference or general medical ontology. Historical and current polarity differences are flagged conservatively. Corrections remain explicit source statements with warnings, not silently resolved. Duration attachment may be broad within a clause. Allergy/history/vital groups preserve exact source sentences rather than invent normalized values.
+
+Unedited ASR findings carry the start time of the first overlapping segment when the segment text reconstructs the exact transcript. Corrected transcripts drop timestamp alignment rather than inventing word times.

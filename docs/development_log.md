@@ -25,3 +25,5 @@
 - Real browser audio upload and transcription also passed; `docs/screenshots/audio.png` records the result.
 - Repository settings API remains unavailable to the integration (403). Public visibility is explicitly user-authorized; the requested description is documented in README, but repository metadata could not be updated.
 - Independent clinician/manual verification of the evaluation labels remains outstanding. No clinical readiness or time-saving claim is made.
+
+- Final traceability refinement attaches ASR segment times only to exact original text and clears alignment after correction; regression added. Final local suite: 39 passed.

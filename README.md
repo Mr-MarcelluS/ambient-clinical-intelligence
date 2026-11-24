@@ -91,7 +91,7 @@ python -m scripts.run_evaluation
 python -m scripts.validation_benchmark
 ```
 
-**38 tests passed locally and in [Linux/Windows CI](https://github.com/Mr-MarcelluS/ambient-clinical-intelligence/actions/runs/45367950770)**, with browser and actual audio-upload integration additionally executed. The 100 authored fictional records use a family-disjoint 60/20/20 split. Held-out negation F1 is **0.857**, exact SOAP section accuracy **0.875**. Three-sample mean WER: **16.3% tiny.en**, **14.1% base.en**. See [evaluation report](docs/evaluation_report.md), [model comparison](docs/model_selection.md) and `data/evaluation/` for denominators, actual outputs and limitations. These are small synthetic benchmarks, not clinical performance claims.
+**39 tests passed locally; the preceding 38-test suite also passed in [Linux/Windows CI](https://github.com/Mr-MarcelluS/ambient-clinical-intelligence/actions/runs/45367950770)**, with browser and actual audio-upload integration additionally executed. The 100 authored fictional records use a family-disjoint 60/20/20 split. Held-out negation F1 is **0.857**, exact SOAP section accuracy **0.875**. Three-sample mean WER: **16.3% tiny.en**, **14.1% base.en**. See [evaluation report](docs/evaluation_report.md), [model comparison](docs/model_selection.md) and `data/evaluation/` for denominators, actual outputs and limitations. These are small synthetic benchmarks, not clinical performance claims.
 
 ## Data and documentation
 

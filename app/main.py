@@ -56,7 +56,7 @@ if page == 'Dashboard':
     st.write('Turn fictional consultations into traceable SOAP drafts. Inspect the evidence, review every section, then approve.')
     a,b,c = st.columns(3)
     a.metric('Consultations', len(rows))
-    b.metric('Notes generated', len(rows))
+    b.metric('Note versions', sum(r['version'] for r in rows))
     c.metric('Pending review', sum(not r['approved'] for r in rows))
     st.subheader('Your review workspace')
     left,right = st.columns([2,1])
@@ -134,6 +134,8 @@ elif page == 'Transcript and Extraction':
         t = a['transcript']
         st.markdown('<div style="padding:20px;background:white;white-space:pre-wrap">'+html.escape(t[:e['start']])+'<mark>'+html.escape(t[e['start']:e['end']])+'</mark>'+html.escape(t[e['end']:])+'</div>', unsafe_allow_html=True)
         st.caption(f"Exact evidence: {e['speaker']} · [{e['start']}, {e['end']})")
+        if e.get('timestamp') is not None:
+            st.caption(f"ASR segment starts at {e['timestamp']:.2f}s (segment-level alignment)")
 elif page == 'SOAP Note':
     r = current()
     st.caption(f"Version {r['version']} · {'Approved' if r['approved'] else 'Draft — review required'} · {r['analysis']['provider']}")

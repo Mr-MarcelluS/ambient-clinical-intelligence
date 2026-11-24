@@ -18,7 +18,7 @@ Actual speech evaluation used three locally synthesized recordings: tiny.en mean
 
 ## Verification
 
-38 local pytest tests passed; Ruff passed. Browser verification exercised consultation creation, evidence inspection, SOAP display, explicit approval and PDF download. Actual multipart audio API integration exercised transcription, correction, regeneration, approval and all export types. Linux and Windows GitHub Actions passed in run 45367950770. Screenshots are in `docs/screenshots/`.
+39 local pytest tests passed; Ruff passed. Browser verification exercised consultation creation, evidence inspection, SOAP display, explicit approval and PDF download. Actual multipart audio API integration exercised transcription, correction, regeneration, approval and all export types. The preceding 38-test suite passed Linux and Windows GitHub Actions in run 45367950770; the final timestamp regression is included in the current workflow. Screenshots are in `docs/screenshots/`.
 
 ## Limitations and unfinished validation
 
