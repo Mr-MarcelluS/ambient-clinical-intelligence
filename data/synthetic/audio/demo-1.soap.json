@@ -1,0 +1,209 @@
+{
+  "transcript": "I think I have a cough. My father has diabetes. I take meth form in 500 milligrams twice daily.",
+  "findings": [
+    {
+      "id": "f0",
+      "entity": "cough",
+      "category": "symptom",
+      "polarity": "uncertain",
+      "certainty": "uncertain",
+      "subject": "unknown",
+      "duration": null,
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 0,
+        "end": 23,
+        "text": "I think I have a cough.",
+        "speaker": "Unknown",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 17,
+        "end": 22,
+        "text": "cough",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "f1",
+      "entity": "diabetes",
+      "category": "condition",
+      "polarity": "positive",
+      "certainty": "certain",
+      "subject": "father",
+      "duration": null,
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 24,
+        "end": 47,
+        "text": "My father has diabetes.",
+        "speaker": "Unknown",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 38,
+        "end": 46,
+        "text": "diabetes",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    }
+  ],
+  "utterances": [
+    {
+      "id": "u0",
+      "section": "S",
+      "evidence": {
+        "start": 0,
+        "end": 23,
+        "text": "I think I have a cough.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "u1",
+      "section": "S",
+      "evidence": {
+        "start": 24,
+        "end": 47,
+        "text": "My father has diabetes.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "u2",
+      "section": "S",
+      "evidence": {
+        "start": 48,
+        "end": 95,
+        "text": "I take meth form in 500 milligrams twice daily.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    }
+  ],
+  "note": {
+    "S": "[Unknown] I think I have a cough.\n[Unknown] My father has diabetes.\n[Unknown] I take meth form in 500 milligrams twice daily.",
+    "O": "Objective findings not documented.",
+    "A": "Assessment not documented.",
+    "P": "Plan not documented."
+  },
+  "warnings": [
+    {
+      "code": "missing_information",
+      "reason": "Objective findings not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "missing_information",
+      "reason": "Assessment not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "missing_information",
+      "reason": "Plan not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "unknown_speaker",
+      "reason": "Assign speaker labels before interpreting attribution.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 0,
+          "end": 23,
+          "text": "I think I have a cough.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    },
+    {
+      "code": "unknown_speaker",
+      "reason": "Assign speaker labels before interpreting attribution.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 24,
+          "end": 47,
+          "text": "My father has diabetes.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    },
+    {
+      "code": "unknown_speaker",
+      "reason": "Assign speaker labels before interpreting attribution.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 48,
+          "end": 95,
+          "text": "I take meth form in 500 milligrams twice daily.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    }
+  ],
+  "processing_seconds": 0.00024420200008989923,
+  "provider": "extractive",
+  "structured": {
+    "symptoms": [
+      {
+        "id": "f0",
+        "entity": "cough",
+        "category": "symptom",
+        "polarity": "uncertain",
+        "certainty": "uncertain",
+        "subject": "unknown",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 0,
+          "end": 23,
+          "text": "I think I have a cough.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 17,
+          "end": 22,
+          "text": "cough",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      }
+    ],
+    "medical_history": [
+      {
+        "start": 24,
+        "end": 47,
+        "text": "My father has diabetes.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    ],
+    "medication_history": [],
+    "allergies": [],
+    "relevant_negatives": [],
+    "examination_findings": [],
+    "vital_signs": [],
+    "assessment": [],
+    "plan": [],
+    "follow_up": []
+  }
+}

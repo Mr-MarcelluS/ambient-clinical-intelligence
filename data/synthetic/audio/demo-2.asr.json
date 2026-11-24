@@ -1,0 +1,17 @@
+{
+  "path": "data/synthetic/audio/demo-2.wav",
+  "transcript": "The pain started yesterday. Sorry, I mean two days ago. I do not have nausea.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 6.0,
+      "text": "The pain started yesterday. Sorry, I mean two days ago. I do not have nausea.",
+      "avg_logprob": -0.3215798166665164,
+      "no_speech_prob": 0.00961137656122446
+    }
+  ],
+  "processing_seconds": 0.9497917429999916,
+  "audio_seconds": 6.4544375,
+  "language": "en",
+  "speaker_warning": "ASR does not identify speakers. Add Doctor:/Patient: labels during correction."
+}

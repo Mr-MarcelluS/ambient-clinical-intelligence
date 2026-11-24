@@ -1,0 +1,17 @@
+{
+  "path": "data/synthetic/audio/demo-0.wav",
+  "transcript": "I am a headache for 3 days. I do not have a femur or vomiting.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.6,
+      "text": "I am a headache for 3 days. I do not have a femur or vomiting.",
+      "avg_logprob": -0.34599857670920237,
+      "no_speech_prob": 0.03837878629565239
+    }
+  ],
+  "processing_seconds": 2.1633475650000946,
+  "audio_seconds": 4.9765625,
+  "language": "en",
+  "speaker_warning": "ASR does not identify speakers. Add Doctor:/Patient: labels during correction."
+}

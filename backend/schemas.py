@@ -57,6 +57,7 @@ class Analysis(StrictModel):
     warnings: list[Warning]
     processing_seconds: float
     provider: str
+    structured: dict = Field(default_factory=dict)
 
 
 class ConsultationInput(StrictModel):

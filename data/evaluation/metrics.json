@@ -1,0 +1,224 @@
+{
+  "method": "Author-labeled synthetic family-disjoint evaluation; no clinician verification. Surface coverage is not semantic accuracy.",
+  "results": {
+    "development": {
+      "records": 60,
+      "metrics": {
+        "symptoms": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 70,
+          "predicted": 70,
+          "correct": 70
+        },
+        "medications": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 10,
+          "predicted": 10,
+          "correct": 10
+        },
+        "duration": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 50,
+          "predicted": 50,
+          "correct": 50
+        },
+        "negation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 20,
+          "predicted": 20,
+          "correct": 20
+        },
+        "uncertainty": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 10,
+          "predicted": 10,
+          "correct": 10
+        },
+        "subject": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 90,
+          "predicted": 90,
+          "correct": 90
+        },
+        "exact_span": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 90,
+          "predicted": 90,
+          "correct": 90
+        }
+      },
+      "soap_section_exact_accuracy": 0.9375,
+      "soap_entity_surface_coverage": 1.0,
+      "soap_gold_line_completeness": 0.9375,
+      "soap_negative_turn_verbatim_preservation": 0.5,
+      "evidence_coverage": 1.0,
+      "unsupported_extraction_span_rate": 0.0,
+      "unsupported_generated_line_rate": 0.0,
+      "input_contradiction_warnings": 0,
+      "mean_processing_seconds": 8.942928332847563e-05,
+      "polarity_mismatch_records": []
+    },
+    "validation": {
+      "records": 20,
+      "metrics": {
+        "symptoms": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 40,
+          "predicted": 40,
+          "correct": 40
+        },
+        "medications": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 5,
+          "predicted": 5,
+          "correct": 5
+        },
+        "duration": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 20,
+          "predicted": 20,
+          "correct": 20
+        },
+        "negation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 10,
+          "predicted": 10,
+          "correct": 10
+        },
+        "uncertainty": {
+          "precision": 0,
+          "recall": 0,
+          "f1": 0,
+          "gold": 0,
+          "predicted": 0,
+          "correct": 0
+        },
+        "subject": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 45,
+          "predicted": 45,
+          "correct": 45
+        },
+        "exact_span": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 45,
+          "predicted": 45,
+          "correct": 45
+        }
+      },
+      "soap_section_exact_accuracy": 0.75,
+      "soap_entity_surface_coverage": 1.0,
+      "soap_gold_line_completeness": 0.75,
+      "soap_negative_turn_verbatim_preservation": 0.0,
+      "evidence_coverage": 1.0,
+      "unsupported_extraction_span_rate": 0.0,
+      "unsupported_generated_line_rate": 0.0,
+      "input_contradiction_warnings": 5,
+      "mean_processing_seconds": 0.00016840130000446153,
+      "polarity_mismatch_records": []
+    },
+    "test": {
+      "records": 20,
+      "metrics": {
+        "symptoms": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 35,
+          "predicted": 35,
+          "correct": 35
+        },
+        "medications": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 5,
+          "predicted": 5,
+          "correct": 5
+        },
+        "duration": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 20,
+          "predicted": 20,
+          "correct": 20
+        },
+        "negation": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "gold": 20,
+          "predicted": 15,
+          "correct": 15
+        },
+        "uncertainty": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 5,
+          "predicted": 5,
+          "correct": 5
+        },
+        "subject": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 45,
+          "predicted": 45,
+          "correct": 45
+        },
+        "exact_span": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "gold": 45,
+          "predicted": 45,
+          "correct": 45
+        }
+      },
+      "soap_section_exact_accuracy": 0.875,
+      "soap_entity_surface_coverage": 1.0,
+      "soap_gold_line_completeness": 0.875,
+      "soap_negative_turn_verbatim_preservation": 0.75,
+      "evidence_coverage": 1.0,
+      "unsupported_extraction_span_rate": 0.0,
+      "unsupported_generated_line_rate": 0.0,
+      "input_contradiction_warnings": 0,
+      "mean_processing_seconds": 0.00017593000001170367,
+      "polarity_mismatch_records": [
+        "syn-19-0",
+        "syn-19-1",
+        "syn-19-2",
+        "syn-19-3",
+        "syn-19-4"
+      ]
+    }
+  }
+}

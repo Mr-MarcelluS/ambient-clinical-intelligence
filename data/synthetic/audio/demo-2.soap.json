@@ -1,0 +1,268 @@
+{
+  "transcript": "The pain started yesterday. Sorry, I mean two days ago. I do not have nausea.",
+  "findings": [
+    {
+      "id": "f0",
+      "entity": "pain",
+      "category": "symptom",
+      "polarity": "positive",
+      "certainty": "certain",
+      "subject": "unknown",
+      "duration": null,
+      "dosage": null,
+      "frequency": null,
+      "temporality": "yesterday",
+      "evidence": {
+        "start": 0,
+        "end": 27,
+        "text": "The pain started yesterday.",
+        "speaker": "Unknown",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 4,
+        "end": 8,
+        "text": "pain",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "f1",
+      "entity": "nausea",
+      "category": "symptom",
+      "polarity": "negative",
+      "certainty": "certain",
+      "subject": "unknown",
+      "duration": null,
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 56,
+        "end": 77,
+        "text": "I do not have nausea.",
+        "speaker": "Unknown",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 70,
+        "end": 76,
+        "text": "nausea",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    }
+  ],
+  "utterances": [
+    {
+      "id": "u0",
+      "section": "S",
+      "evidence": {
+        "start": 0,
+        "end": 27,
+        "text": "The pain started yesterday.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "u1",
+      "section": "S",
+      "evidence": {
+        "start": 28,
+        "end": 55,
+        "text": "Sorry, I mean two days ago.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "u2",
+      "section": "S",
+      "evidence": {
+        "start": 56,
+        "end": 77,
+        "text": "I do not have nausea.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    }
+  ],
+  "note": {
+    "S": "[Unknown] The pain started yesterday.\n[Unknown] Sorry, I mean two days ago.\n[Unknown] I do not have nausea.",
+    "O": "Objective findings not documented.",
+    "A": "Assessment not documented.",
+    "P": "Plan not documented."
+  },
+  "warnings": [
+    {
+      "code": "missing_information",
+      "reason": "Objective findings not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "missing_information",
+      "reason": "Assessment not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "missing_information",
+      "reason": "Plan not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "unknown_speaker",
+      "reason": "Assign speaker labels before interpreting attribution.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 0,
+          "end": 27,
+          "text": "The pain started yesterday.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    },
+    {
+      "code": "correction",
+      "reason": "Explicit correction; review preceding statement.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 28,
+          "end": 55,
+          "text": "Sorry, I mean two days ago.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    },
+    {
+      "code": "unknown_speaker",
+      "reason": "Assign speaker labels before interpreting attribution.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 28,
+          "end": 55,
+          "text": "Sorry, I mean two days ago.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    },
+    {
+      "code": "unknown_speaker",
+      "reason": "Assign speaker labels before interpreting attribution.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 56,
+          "end": 77,
+          "text": "I do not have nausea.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    }
+  ],
+  "processing_seconds": 0.00023598899997523404,
+  "provider": "extractive",
+  "structured": {
+    "symptoms": [
+      {
+        "id": "f0",
+        "entity": "pain",
+        "category": "symptom",
+        "polarity": "positive",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "yesterday",
+        "evidence": {
+          "start": 0,
+          "end": 27,
+          "text": "The pain started yesterday.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 4,
+          "end": 8,
+          "text": "pain",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      },
+      {
+        "id": "f1",
+        "entity": "nausea",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 56,
+          "end": 77,
+          "text": "I do not have nausea.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 70,
+          "end": 76,
+          "text": "nausea",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      }
+    ],
+    "medical_history": [],
+    "medication_history": [],
+    "allergies": [],
+    "relevant_negatives": [
+      {
+        "id": "f1",
+        "entity": "nausea",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 56,
+          "end": 77,
+          "text": "I do not have nausea.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 70,
+          "end": 76,
+          "text": "nausea",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      }
+    ],
+    "examination_findings": [],
+    "vital_signs": [],
+    "assessment": [],
+    "plan": [],
+    "follow_up": []
+  }
+}

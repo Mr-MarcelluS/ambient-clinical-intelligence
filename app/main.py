@@ -16,7 +16,7 @@ st.set_page_config(page_title='ACI | Ambient Clinical Intelligence', page_icon='
 st.markdown('''<style>
 .stApp {background:#f5f8fb} h1,h2,h3 {color:#163c48} [data-testid="stSidebar"] {background:#e8f0f1}
 [data-testid="stMetric"] {background:white;border:1px solid #d9e4e8;border-radius:12px;padding:18px}
-.block-container {padding-top:2rem} .eyebrow {color:#287a80;font-size:12px;letter-spacing:2px;font-weight:700}
+.block-container {padding-top:4rem} .eyebrow {color:#287a80;font-size:12px;letter-spacing:2px;font-weight:700}
 </style>''', unsafe_allow_html=True)
 st.sidebar.markdown('## ◈ ACI\nAmbient Clinical Intelligence')
 st.sidebar.caption('RESEARCH WORKSPACE · SYNTHETIC ONLY')
@@ -61,7 +61,10 @@ if page == 'Dashboard':
     st.subheader('Your review workspace')
     left,right = st.columns([2,1])
     with left:
-        st.dataframe(rows, hide_index=True, use_container_width=True) if rows else st.info('No sessions yet. Open New Consultation to try the fictional demo.')
+        if rows:
+            st.dataframe([{'Session':r['title'], 'Version':r['version'], 'Status':'Approved' if r['approved'] else 'Pending review'} for r in rows], hide_index=True, use_container_width=True)
+        else:
+            st.info('No sessions yet. Open New Consultation to try the fictional demo.')
     with right:
         st.success('Local documentation pipeline ready')
         st.write('**01** Capture or paste\n\n**02** Inspect and correct\n\n**03** Review and export')
@@ -119,6 +122,8 @@ elif page == 'Transcript and Extraction':
             st.rerun()
         except Exception as exc:
             st.error(str(exc))
+    with st.expander('Structured clinical information'):
+        st.json(a.get('structured', {}), expanded=False)
     st.subheader('Clinical findings')
     st.caption('Unlisted concepts are not mentioned, never assumed negative. This limited rule baseline may miss concepts; review the full transcript.')
     facts = a['findings']

@@ -1,0 +1,17 @@
+{
+  "path": "data/synthetic/audio/demo-1.wav",
+  "transcript": "I think I have a cough. My father has diabetes. I take meth form in 500 milligrams twice daily.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 7.5,
+      "text": "I think I have a cough. My father has diabetes. I take meth form in 500 milligrams twice daily.",
+      "avg_logprob": -0.31261257109818635,
+      "no_speech_prob": 0.031359463930130005
+    }
+  ],
+  "processing_seconds": 1.4159973929999978,
+  "audio_seconds": 7.8520625,
+  "language": "en",
+  "speaker_warning": "ASR does not identify speakers. Add Doctor:/Patient: labels during correction."
+}

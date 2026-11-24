@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "steps": [
+    "WAV multipart upload",
+    "real CPU Whisper transcription",
+    "extraction",
+    "transcript correction preserving original",
+    "SOAP regeneration",
+    "explicit simulated approval",
+    "JSON/PDF/DOCX export"
+  ],
+  "review": "automated simulation, not clinician approval"
+}

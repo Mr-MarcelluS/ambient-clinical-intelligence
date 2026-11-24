@@ -1,0 +1,229 @@
+{
+  "transcript": "I am a headache for 3 days. I do not have a femur or vomiting.",
+  "findings": [
+    {
+      "id": "f0",
+      "entity": "headache",
+      "category": "symptom",
+      "polarity": "positive",
+      "certainty": "certain",
+      "subject": "unknown",
+      "duration": "3 days",
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 0,
+        "end": 27,
+        "text": "I am a headache for 3 days.",
+        "speaker": "Unknown",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 7,
+        "end": 15,
+        "text": "headache",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "f1",
+      "entity": "vomiting",
+      "category": "symptom",
+      "polarity": "negative",
+      "certainty": "certain",
+      "subject": "unknown",
+      "duration": null,
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 28,
+        "end": 62,
+        "text": "I do not have a femur or vomiting.",
+        "speaker": "Unknown",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 53,
+        "end": 61,
+        "text": "vomiting",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    }
+  ],
+  "utterances": [
+    {
+      "id": "u0",
+      "section": "S",
+      "evidence": {
+        "start": 0,
+        "end": 27,
+        "text": "I am a headache for 3 days.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "u1",
+      "section": "S",
+      "evidence": {
+        "start": 28,
+        "end": 62,
+        "text": "I do not have a femur or vomiting.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    }
+  ],
+  "note": {
+    "S": "[Unknown] I am a headache for 3 days.\n[Unknown] I do not have a femur or vomiting.",
+    "O": "Objective findings not documented.",
+    "A": "Assessment not documented.",
+    "P": "Plan not documented."
+  },
+  "warnings": [
+    {
+      "code": "missing_information",
+      "reason": "Objective findings not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "missing_information",
+      "reason": "Assessment not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "missing_information",
+      "reason": "Plan not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "unknown_speaker",
+      "reason": "Assign speaker labels before interpreting attribution.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 0,
+          "end": 27,
+          "text": "I am a headache for 3 days.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    },
+    {
+      "code": "unknown_speaker",
+      "reason": "Assign speaker labels before interpreting attribution.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 28,
+          "end": 62,
+          "text": "I do not have a femur or vomiting.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    }
+  ],
+  "processing_seconds": 0.0009721510000417766,
+  "provider": "extractive",
+  "structured": {
+    "symptoms": [
+      {
+        "id": "f0",
+        "entity": "headache",
+        "category": "symptom",
+        "polarity": "positive",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": "3 days",
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 0,
+          "end": 27,
+          "text": "I am a headache for 3 days.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 7,
+          "end": 15,
+          "text": "headache",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      },
+      {
+        "id": "f1",
+        "entity": "vomiting",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 28,
+          "end": 62,
+          "text": "I do not have a femur or vomiting.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 53,
+          "end": 61,
+          "text": "vomiting",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      }
+    ],
+    "medical_history": [],
+    "medication_history": [],
+    "allergies": [],
+    "relevant_negatives": [
+      {
+        "id": "f1",
+        "entity": "vomiting",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 28,
+          "end": 62,
+          "text": "I do not have a femur or vomiting.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 53,
+          "end": 61,
+          "text": "vomiting",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      }
+    ],
+    "examination_findings": [],
+    "vital_signs": [],
+    "assessment": [],
+    "plan": [],
+    "follow_up": []
+  }
+}

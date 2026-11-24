@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "case": "invented_diagnosis",
+      "detected": true
+    },
+    {
+      "case": "invented_medication",
+      "detected": true
+    },
+    {
+      "case": "invented_exam",
+      "detected": true
+    },
+    {
+      "case": "polarity_reversal",
+      "detected": true
+    },
+    {
+      "case": "wrong_duration",
+      "detected": true
+    },
+    {
+      "case": "wrong_dose",
+      "detected": true
+    },
+    {
+      "case": "wrong_subject",
+      "detected": true
+    },
+    {
+      "case": "wrong_speaker",
+      "detected": true
+    }
+  ],
+  "detection_rate": 1.0,
+  "unmodified_note_error_count": 0,
+  "scope": "Eight authored mutations detected by conservative exact-line matching; not semantic hallucination detection."
+}
