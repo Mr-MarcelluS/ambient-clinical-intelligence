@@ -1,0 +1,27 @@
+{
+  "dataset_name": "ACI fictional consultations v1",
+  "source_url": "https://github.com/Mr-MarcelluS/ambient-clinical-intelligence",
+  "license": "MIT",
+  "download_date": null,
+  "generated_date": "2026-11-24",
+  "format": "JSONL",
+  "records": 100,
+  "split_counts": {
+    "development": 60,
+    "validation": 20,
+    "test": 20
+  },
+  "scenario_families": 20,
+  "processing_steps": [
+    "authored scenario templates and independent labels",
+    "numeric variations",
+    "family-disjoint split",
+    "exact-span validation"
+  ],
+  "intended_usage": "prototype testing; not clinical validation",
+  "access_restrictions": "none; entirely fictional",
+  "attribution_required": true,
+  "commercial_use_permitted": true,
+  "redistribution_permitted": true,
+  "sha256": "a6c801801b4399a2e2125963e5c07d5595d0f1f0aa22f307b94c4c568ab0dc02"
+}

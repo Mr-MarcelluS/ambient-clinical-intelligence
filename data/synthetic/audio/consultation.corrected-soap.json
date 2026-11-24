@@ -1,0 +1,348 @@
+{
+  "transcript": "Patient: I have a headache for three days, but no fever or vomiting.\nDoctor: On examination, temperature is 37 degrees.\nDoctor: My assessment is a possible migraine.\nDoctor: Plan: rest and return in two days if symptoms persist.",
+  "findings": [
+    {
+      "id": "f0",
+      "entity": "headache",
+      "category": "symptom",
+      "polarity": "positive",
+      "certainty": "certain",
+      "subject": "patient",
+      "duration": "three days",
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 9,
+        "end": 68,
+        "text": "I have a headache for three days, but no fever or vomiting.",
+        "speaker": "Patient",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 18,
+        "end": 26,
+        "text": "headache",
+        "speaker": "Patient",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "f1",
+      "entity": "fever",
+      "category": "symptom",
+      "polarity": "negative",
+      "certainty": "certain",
+      "subject": "patient",
+      "duration": null,
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 9,
+        "end": 68,
+        "text": "I have a headache for three days, but no fever or vomiting.",
+        "speaker": "Patient",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 50,
+        "end": 55,
+        "text": "fever",
+        "speaker": "Patient",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "f2",
+      "entity": "vomiting",
+      "category": "symptom",
+      "polarity": "negative",
+      "certainty": "certain",
+      "subject": "patient",
+      "duration": null,
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 9,
+        "end": 68,
+        "text": "I have a headache for three days, but no fever or vomiting.",
+        "speaker": "Patient",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 59,
+        "end": 67,
+        "text": "vomiting",
+        "speaker": "Patient",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "f3",
+      "entity": "migraine",
+      "category": "condition",
+      "polarity": "uncertain",
+      "certainty": "uncertain",
+      "subject": "patient",
+      "duration": null,
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 128,
+        "end": 165,
+        "text": "My assessment is a possible migraine.",
+        "speaker": "Doctor",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 156,
+        "end": 164,
+        "text": "migraine",
+        "speaker": "Doctor",
+        "timestamp": null
+      }
+    }
+  ],
+  "utterances": [
+    {
+      "id": "u0",
+      "section": "S",
+      "evidence": {
+        "start": 9,
+        "end": 68,
+        "text": "I have a headache for three days, but no fever or vomiting.",
+        "speaker": "Patient",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "u1",
+      "section": "O",
+      "evidence": {
+        "start": 77,
+        "end": 119,
+        "text": "On examination, temperature is 37 degrees.",
+        "speaker": "Doctor",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "u2",
+      "section": "A",
+      "evidence": {
+        "start": 128,
+        "end": 165,
+        "text": "My assessment is a possible migraine.",
+        "speaker": "Doctor",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "u3",
+      "section": "P",
+      "evidence": {
+        "start": 174,
+        "end": 228,
+        "text": "Plan: rest and return in two days if symptoms persist.",
+        "speaker": "Doctor",
+        "timestamp": null
+      }
+    }
+  ],
+  "note": {
+    "S": "[Patient] I have a headache for three days, but no fever or vomiting.",
+    "O": "[Doctor] On examination, temperature is 37 degrees.",
+    "A": "[Doctor] My assessment is a possible migraine.",
+    "P": "[Doctor] Plan: rest and return in two days if symptoms persist."
+  },
+  "warnings": [],
+  "processing_seconds": 0.00043650700013131427,
+  "provider": "extractive",
+  "structured": {
+    "symptoms": [
+      {
+        "id": "f0",
+        "entity": "headache",
+        "category": "symptom",
+        "polarity": "positive",
+        "certainty": "certain",
+        "subject": "patient",
+        "duration": "three days",
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 9,
+          "end": 68,
+          "text": "I have a headache for three days, but no fever or vomiting.",
+          "speaker": "Patient",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 18,
+          "end": 26,
+          "text": "headache",
+          "speaker": "Patient",
+          "timestamp": null
+        }
+      },
+      {
+        "id": "f1",
+        "entity": "fever",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "patient",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 9,
+          "end": 68,
+          "text": "I have a headache for three days, but no fever or vomiting.",
+          "speaker": "Patient",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 50,
+          "end": 55,
+          "text": "fever",
+          "speaker": "Patient",
+          "timestamp": null
+        }
+      },
+      {
+        "id": "f2",
+        "entity": "vomiting",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "patient",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 9,
+          "end": 68,
+          "text": "I have a headache for three days, but no fever or vomiting.",
+          "speaker": "Patient",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 59,
+          "end": 67,
+          "text": "vomiting",
+          "speaker": "Patient",
+          "timestamp": null
+        }
+      }
+    ],
+    "medical_history": [],
+    "medication_history": [],
+    "allergies": [],
+    "relevant_negatives": [
+      {
+        "id": "f1",
+        "entity": "fever",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "patient",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 9,
+          "end": 68,
+          "text": "I have a headache for three days, but no fever or vomiting.",
+          "speaker": "Patient",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 50,
+          "end": 55,
+          "text": "fever",
+          "speaker": "Patient",
+          "timestamp": null
+        }
+      },
+      {
+        "id": "f2",
+        "entity": "vomiting",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "patient",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 9,
+          "end": 68,
+          "text": "I have a headache for three days, but no fever or vomiting.",
+          "speaker": "Patient",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 59,
+          "end": 67,
+          "text": "vomiting",
+          "speaker": "Patient",
+          "timestamp": null
+        }
+      }
+    ],
+    "examination_findings": [
+      {
+        "start": 77,
+        "end": 119,
+        "text": "On examination, temperature is 37 degrees.",
+        "speaker": "Doctor",
+        "timestamp": null
+      }
+    ],
+    "vital_signs": [
+      {
+        "start": 77,
+        "end": 119,
+        "text": "On examination, temperature is 37 degrees.",
+        "speaker": "Doctor",
+        "timestamp": null
+      }
+    ],
+    "assessment": [
+      {
+        "start": 128,
+        "end": 165,
+        "text": "My assessment is a possible migraine.",
+        "speaker": "Doctor",
+        "timestamp": null
+      }
+    ],
+    "plan": [
+      {
+        "start": 174,
+        "end": 228,
+        "text": "Plan: rest and return in two days if symptoms persist.",
+        "speaker": "Doctor",
+        "timestamp": null
+      }
+    ],
+    "follow_up": [
+      {
+        "start": 174,
+        "end": 228,
+        "text": "Plan: rest and return in two days if symptoms persist.",
+        "speaker": "Doctor",
+        "timestamp": null
+      }
+    ]
+  }
+}

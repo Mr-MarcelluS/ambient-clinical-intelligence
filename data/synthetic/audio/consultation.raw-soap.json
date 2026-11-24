@@ -1,0 +1,333 @@
+{
+  "transcript": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees. My assessment is a possible migraine, plan rest and return in 2 days if symptoms persist.",
+  "findings": [
+    {
+      "id": "f0",
+      "entity": "headache",
+      "category": "symptom",
+      "polarity": "positive",
+      "certainty": "certain",
+      "subject": "unknown",
+      "duration": "3 days",
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 0,
+        "end": 96,
+        "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+        "speaker": "Unknown",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 9,
+        "end": 17,
+        "text": "headache",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "f1",
+      "entity": "fever",
+      "category": "symptom",
+      "polarity": "negative",
+      "certainty": "certain",
+      "subject": "unknown",
+      "duration": null,
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 0,
+        "end": 96,
+        "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+        "speaker": "Unknown",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 37,
+        "end": 42,
+        "text": "fever",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "f2",
+      "entity": "vomiting",
+      "category": "symptom",
+      "polarity": "negative",
+      "certainty": "certain",
+      "subject": "unknown",
+      "duration": null,
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 0,
+        "end": 96,
+        "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+        "speaker": "Unknown",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 46,
+        "end": 54,
+        "text": "vomiting",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "f3",
+      "entity": "migraine",
+      "category": "condition",
+      "polarity": "uncertain",
+      "certainty": "uncertain",
+      "subject": "unknown",
+      "duration": "2 days",
+      "dosage": null,
+      "frequency": null,
+      "temporality": "unspecified",
+      "evidence": {
+        "start": 97,
+        "end": 186,
+        "text": "My assessment is a possible migraine, plan rest and return in 2 days if symptoms persist.",
+        "speaker": "Unknown",
+        "timestamp": null
+      },
+      "mention": {
+        "start": 125,
+        "end": 133,
+        "text": "migraine",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    }
+  ],
+  "utterances": [
+    {
+      "id": "u0",
+      "section": "S",
+      "evidence": {
+        "start": 0,
+        "end": 96,
+        "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    },
+    {
+      "id": "u1",
+      "section": "S",
+      "evidence": {
+        "start": 97,
+        "end": 186,
+        "text": "My assessment is a possible migraine, plan rest and return in 2 days if symptoms persist.",
+        "speaker": "Unknown",
+        "timestamp": null
+      }
+    }
+  ],
+  "note": {
+    "S": "[Unknown] I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.\n[Unknown] My assessment is a possible migraine, plan rest and return in 2 days if symptoms persist.",
+    "O": "Objective findings not documented.",
+    "A": "Assessment not documented.",
+    "P": "Plan not documented."
+  },
+  "warnings": [
+    {
+      "code": "missing_information",
+      "reason": "Objective findings not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "missing_information",
+      "reason": "Assessment not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "missing_information",
+      "reason": "Plan not documented.",
+      "severity": "info",
+      "evidence": []
+    },
+    {
+      "code": "unknown_speaker",
+      "reason": "Assign speaker labels before interpreting attribution.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 0,
+          "end": 96,
+          "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    },
+    {
+      "code": "unknown_speaker",
+      "reason": "Assign speaker labels before interpreting attribution.",
+      "severity": "warning",
+      "evidence": [
+        {
+          "start": 97,
+          "end": 186,
+          "text": "My assessment is a possible migraine, plan rest and return in 2 days if symptoms persist.",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      ]
+    }
+  ],
+  "processing_seconds": 0.0009244000000308006,
+  "provider": "extractive",
+  "structured": {
+    "symptoms": [
+      {
+        "id": "f0",
+        "entity": "headache",
+        "category": "symptom",
+        "polarity": "positive",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": "3 days",
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 0,
+          "end": 96,
+          "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 9,
+          "end": 17,
+          "text": "headache",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      },
+      {
+        "id": "f1",
+        "entity": "fever",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 0,
+          "end": 96,
+          "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 37,
+          "end": 42,
+          "text": "fever",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      },
+      {
+        "id": "f2",
+        "entity": "vomiting",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 0,
+          "end": 96,
+          "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 46,
+          "end": 54,
+          "text": "vomiting",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      }
+    ],
+    "medical_history": [],
+    "medication_history": [],
+    "allergies": [],
+    "relevant_negatives": [
+      {
+        "id": "f1",
+        "entity": "fever",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 0,
+          "end": 96,
+          "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 37,
+          "end": 42,
+          "text": "fever",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      },
+      {
+        "id": "f2",
+        "entity": "vomiting",
+        "category": "symptom",
+        "polarity": "negative",
+        "certainty": "certain",
+        "subject": "unknown",
+        "duration": null,
+        "dosage": null,
+        "frequency": null,
+        "temporality": "unspecified",
+        "evidence": {
+          "start": 0,
+          "end": 96,
+          "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+          "speaker": "Unknown",
+          "timestamp": null
+        },
+        "mention": {
+          "start": 46,
+          "end": 54,
+          "text": "vomiting",
+          "speaker": "Unknown",
+          "timestamp": null
+        }
+      }
+    ],
+    "examination_findings": [],
+    "vital_signs": [],
+    "assessment": [],
+    "plan": [],
+    "follow_up": []
+  }
+}

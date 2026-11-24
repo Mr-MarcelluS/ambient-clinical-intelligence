@@ -1,0 +1,24 @@
+{
+  "path": "data/synthetic/audio/consultation.wav",
+  "transcript": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees. My assessment is a possible migraine, plan rest and return in 2 days if symptoms persist.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 9.0,
+      "text": "I have a headache for 3 days, but no fever or vomiting on examination temperature is 37 degrees.",
+      "avg_logprob": -0.30740777559058613,
+      "no_speech_prob": 0.1933891326189041
+    },
+    {
+      "start": 9.0,
+      "end": 16.0,
+      "text": "My assessment is a possible migraine, plan rest and return in 2 days if symptoms persist.",
+      "avg_logprob": -0.30740777559058613,
+      "no_speech_prob": 0.1933891326189041
+    }
+  ],
+  "processing_seconds": 1.968720360000134,
+  "audio_seconds": 16.4995625,
+  "language": "en",
+  "speaker_warning": "ASR does not identify speakers. Add Doctor:/Patient: labels during correction."
+}

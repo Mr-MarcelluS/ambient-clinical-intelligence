@@ -51,6 +51,7 @@ For generated speech samples, install [eSpeak NG](https://github.com/espeak-ng/e
 
 ```bash
 python -m scripts.audio_demo
+python -m scripts.consultation_demo
 ```
 
 This produces three fictional WAVs, separate ground-truth text, actual ASR JSON, SOAP output and measured WER. Existing measured transcripts/notes are under `data/synthetic/audio/`; WAV/model files are intentionally not committed. The script is a reproducible local speech-generation demonstration, not a clinical recording.
@@ -70,7 +71,7 @@ ai/speech.py                Bounded audio decode, VAD, faster-whisper CPU infere
 ai/soap.py                  Extractive generator and local Ollama provider
 ai/validation.py            Source/section checks, conflicts, corrections, omissions
 scripts/                   Dataset acquisition, generation, validation, evaluation
- data/                     Raw/processed (ignored), synthetic, evaluation, manifests
+data/                      Raw/processed (ignored), synthetic, evaluation, manifests
 tests/                     Unit, API integration and Streamlit workflow tests
 docs/                      Reports, architecture/schema diagrams and screenshots
 .github/workflows/ci.yml    Linux and Windows tests/lint

@@ -1,0 +1,4 @@
+Patient: I have a headache for three days, but no fever or vomiting.
+Doctor: On examination, temperature is 37 degrees.
+Doctor: My assessment is a possible migraine.
+Doctor: Plan: rest and return in two days if symptoms persist.

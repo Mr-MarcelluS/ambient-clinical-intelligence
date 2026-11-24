@@ -17,3 +17,5 @@
 - Measured tiny.en and base.en transcription, retained reference and ASR outputs separately. Neither reliably transcribes clinical terms; errors documented.
 - Actual FastAPI multipart WAV upload, ASR, extraction, transcript correction, versioned SOAP, simulated approval and all three exports passed. Review is automated QA, not a clinician's approval.
 - Held-out postposed-negation failure retained without tuning. Evaluation is author-labeled synthetic testing, not independent clinical validation.
+
+- Live Streamlit health passed on port 8501. API port 8001 was occupied; launched successfully on 8011 and verified `/health`. Added a full fictional consultation WAV with separate original-ASR and author-corrected SOAP drafts.
