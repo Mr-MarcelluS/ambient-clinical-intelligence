@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+*.db
+*.db-*
+*.wav
+*.mp3
+models/
+data/raw/*
+data/processed/*
+!**/.gitkeep
+runtime/
