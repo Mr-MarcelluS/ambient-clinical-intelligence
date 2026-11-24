@@ -19,3 +19,9 @@
 - Held-out postposed-negation failure retained without tuning. Evaluation is author-labeled synthetic testing, not independent clinical validation.
 
 - Live Streamlit health passed on port 8501. API port 8001 was occupied; launched successfully on 8011 and verified `/health`. Added a full fictional consultation WAV with separate original-ASR and author-corrected SOAP drafts.
+
+## GitHub and final verification
+- GitHub Actions run 45367950770 passed both Ubuntu and Windows Python 3.12 jobs (dependency installation, Ruff, 38 pytest tests, dataset checks and evaluation): https://github.com/Mr-MarcelluS/ambient-clinical-intelligence/actions/runs/45367950770
+- Real browser audio upload and transcription also passed; `docs/screenshots/audio.png` records the result.
+- Repository settings API remains unavailable to the integration (403). Public visibility is explicitly user-authorized; the requested description is documented in README, but repository metadata could not be updated.
+- Independent clinician/manual verification of the evaluation labels remains outstanding. No clinical readiness or time-saving claim is made.

@@ -1,6 +1,8 @@
 # ACI — Ambient Clinical Intelligence
 
-A working, local-first **fictional consultation** documentation prototype: audio/text → evidence-linked facts → SOAP draft → review → approved export.
+An AI-powered Ambient Clinical Intelligence prototype for automated clinical conversation transcription, information extraction, SOAP note generation and clinical documentation validation.
+
+A working, local-first **fictional consultation** workflow: audio/text → evidence-linked facts → SOAP draft → review → approved export.
 
 > This is an academic research prototype for clinical documentation assistance. It is not a medical diagnostic system and must not be used for real clinical decision-making or patient care.
 
@@ -89,7 +91,7 @@ python -m scripts.run_evaluation
 python -m scripts.validation_benchmark
 ```
 
-**38 local tests passed**, with browser and actual audio-upload integration additionally executed. The 100 authored fictional records use a family-disjoint 60/20/20 split. Held-out negation F1 is **0.857**, exact SOAP section accuracy **0.875**. Three-sample mean WER: **16.3% tiny.en**, **14.1% base.en**. See [evaluation report](docs/evaluation_report.md), [model comparison](docs/model_selection.md) and `data/evaluation/` for denominators, actual outputs and limitations. These are small synthetic benchmarks, not clinical performance claims.
+**38 tests passed locally and in [Linux/Windows CI](https://github.com/Mr-MarcelluS/ambient-clinical-intelligence/actions/runs/45367950770)**, with browser and actual audio-upload integration additionally executed. The 100 authored fictional records use a family-disjoint 60/20/20 split. Held-out negation F1 is **0.857**, exact SOAP section accuracy **0.875**. Three-sample mean WER: **16.3% tiny.en**, **14.1% base.en**. See [evaluation report](docs/evaluation_report.md), [model comparison](docs/model_selection.md) and `data/evaluation/` for denominators, actual outputs and limitations. These are small synthetic benchmarks, not clinical performance claims.
 
 ## Data and documentation
 
